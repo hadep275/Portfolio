@@ -47,8 +47,12 @@ footer{
   background-color: #F4C2C1;
 }
 
-.href{
-  color: #C9C9C9;
+a{
+  color: #B76778; 
+  text-decoration: solid;
+}
+a:hover {
+  color: hotpink;
 }
 
 input{
