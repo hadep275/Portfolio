@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  justify-content:flex-end
 }
 h1{
   color: #1B1811;

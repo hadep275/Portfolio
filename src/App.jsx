@@ -15,6 +15,7 @@ function App() {
       <Navbar />
       <Outlet/>
       {/* <About />
+      <Resume/>
       <Project /> */}
       <Footer/>
       
