@@ -5,23 +5,22 @@ import Project from './routes/project'
 import Navbar from './routes/navbar'
 import { Outlet } from 'react-router-dom'
 import Skills from './routes/skills'
-// import Footer from './footer.jsx';
+import Footer from './footer.jsx';
 
 import './App.css' 
 
 function App() {
 
   return (
-    <>
+    <> 
+    <Navbar />
       <main>
-      <Navbar />
       <Outlet/>
       <About />
-      {/* <Project /> */}
+      <Project />
       <Skills/>
-      {/* <Footer/> */}
-      
     </main>
+    <Footer/>
     </>
   )
 }
