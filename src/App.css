@@ -16,11 +16,11 @@
 }
 
 /************ Default Css ************/
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -82,10 +82,11 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
-  width: 60%;
+  width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
