@@ -6,7 +6,7 @@ import Navbar from './routes/navbar'
 import { Outlet } from 'react-router-dom'
 import Skills from './routes/skills'
 import Footer from './footer.jsx';
-
+import Contact from './routes/contact';
 import './App.css' 
 
 function App() {
@@ -15,10 +15,11 @@ function App() {
     <> 
     <Navbar />
       <main>
-      <Outlet/>
       <About />
       <Project />
       <Skills/>
+      <Contact/>
+      <Outlet/>
     </main>
     <Footer/>
     </>
