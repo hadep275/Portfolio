@@ -43,13 +43,14 @@ const onUpdateActiveLink = (value) => {
           <Nav className="me-auto">
             <Nav.Link href="/" className = {activeLink === 'home'? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="/About" className = {activeLink === 'about'? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
+            <Nav.Link href="/skills" className = {activeLink === 'about'? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>Skills</Nav.Link>
             <Nav.Link href="/Project" className = {activeLink === 'project'? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href ="/"img src={navIcon1} alt=""></a>
-              <a href ="/"img src={navIcon2} alt=""></a>
-              <a href ="/"img src={navIcon3} alt=""></a>
+              <a href ="#"img src={navIcon1} alt=""></a>
+              <a href ="#"img src={navIcon2} alt=""></a>
+              <a href ="#"img src={navIcon3} alt=""></a>
             </div>
             <HashLink to='/contact'>
           <button className='vvd' onClick={() => console.log('connect')}>
