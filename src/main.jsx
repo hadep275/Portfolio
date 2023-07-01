@@ -1,33 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import About from './routes/about'
-import Contact from './routes/contact.jsx';
-import ErrorPage from './routes/error-page.jsx';
-import Skills from './routes/skills'
-import Project from './routes/project'
+import About from './components/about'
+import Contact from './components/contact.jsx';
+import ErrorPage from './components/error-page.jsx';
+import Skills from './components/skills'
+import Project from './components/project'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
+// import Navbar from './components/navbar'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Navigation />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-      path: "/project",
-      element: <Project />,
-      },
-      {
-      path: "/skills",
-      element: <Skills />,
-      },
-
     ],
   },
   {
@@ -39,6 +27,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <App/>
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

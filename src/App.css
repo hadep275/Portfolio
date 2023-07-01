@@ -28,6 +28,7 @@ html {
 }
 
 body {
+ 
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -83,7 +84,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 
-nav.navbar {
+.navStyle {
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -91,7 +92,7 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-nav.navbar.scrolled {
+nav.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
@@ -233,13 +234,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About Css ************/
 .about {
-  margin-top: 200rem;
-  padding: 0 0 50px 0;
+  margin-top: 600;
+  /* padding: 0 0 50px 0;
   position: relative;
   background-image: url('./assets/img/about-bg.png');
   background-position: center;
   background-size: 100px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .about .tagline {
   font-weight: 700;
