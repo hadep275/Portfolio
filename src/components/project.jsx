@@ -1,5 +1,5 @@
 import React from 'react'
-import 
+ 
 const project = () => {
   const divStyle ={ 
     // display: flex,
