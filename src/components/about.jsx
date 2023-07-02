@@ -6,6 +6,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-scroll";
+import "../App.css";
 
 const about = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -36,8 +37,8 @@ const about = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 4)
-      : fullText.substring(0, text.length + 4);
+      ? fullText.substring(0, text.length - 2)
+      : fullText.substring(0, text.length + 2);
 
     setText(updatedText);
 
@@ -73,17 +74,17 @@ const about = () => {
                     }
                   >
                     <span className="tagline"></span>
-                    <h1 sytle={{ marginTop:600, }}>
-                      {`I'm`}{" "}
+                    <h1 style={{ display: "flex" }}>
+                      {`I'm`} {" "}
                       <span
                         className="txt-rotate"
                         dataPeriod="1000"
-                        data-rotate='[ "HIKMAH", "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                        data-rotate='[ "HIKMAH", "Web Developer", "Web Designer", "UI/UX Designer", "Full-Stack Developer" ]'
                       >
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>
-                    {/* <p>Full-Stack Developer.</p> */}
+                    <p>I am an adaptable individual transitioning from the financial industry to become a Full Stack developer with a strong attention to detail and the ability to execute successfully under pressure. I'm excited to utilise my diverse set of skills, collaborative mindset, and unwavering commitment to quality to develop important software solutions for improving user experiences and corporate growth..</p>
                     <Link to="contact" smooth={true} duration={500}>
                       <button onClick={() => console.log("connect")}>
                         Let’s Connect <ArrowRightCircle size={25} />
@@ -101,7 +102,7 @@ const about = () => {
                       isVisible ? "animate__animated animate__zoomIn" : ""
                     }
                   >
-                    <img src={headerImg} alt="Header Img" />
+                    <img src={""} alt="Header Img" />
                   </div>
                 )}
               </TrackVisibility>
