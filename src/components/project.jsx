@@ -1,20 +1,52 @@
-import React from 'react'
- 
+import React from "react";
+import "./project.css";
 const project = () => {
-  const divStyle ={ 
-    // display: flex,
-    width: 100,
-	  height: 100,
-	// position: relative,
-	// alignItems: center,
-	// justifyContent: center,
-
-}
   return (
-    <div style={divStyle}>
-      <button class="custom-btn btn-12"><span>Click!</span><span>Number 12</span></button>
+    <div class="project">
+      <div class="container">
+        <h1>Projects</h1>
       </div>
-  )
-}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="cardholder">
+              <div class="card">
+                <p class="desc">QuantumX</p>
+                <img src="" />
+              </div>
+            </div>
+          </div>
 
-export default project
+          <div class="col-md-3">
+            <div class="cardholder">
+              <div class="card">
+                <p class="desc">Indeygo</p>
+                <img src="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="cardholder">
+              <div class="card">
+                <p class="desc">EveryChildPlays</p>
+                <img src="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="cardholder">
+              <div class="card">
+                <p class="desc">InceptionGPT</p>
+                <img src="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default project;

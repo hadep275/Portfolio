@@ -6,7 +6,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-scroll";
-import "../App.css";
+import "./About.css";
+import colorSharp from "../assets/img/color-sharp.png";
 
 const about = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -61,7 +62,10 @@ const about = () => {
   };
 
   return (
-    <section className="banner" id="about">
+    <section
+      className="banner"
+      id="about"
+      >        
       <div className="m-24">
         <Container>
           <Row className="align-items-center">
@@ -75,7 +79,7 @@ const about = () => {
                   >
                     <span className="tagline"></span>
                     <h1 style={{ display: "flex" }}>
-                      {`I'm`} {" "}
+                      {`I'm`}{" "}
                       <span
                         className="txt-rotate"
                         dataPeriod="1000"
@@ -84,7 +88,18 @@ const about = () => {
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>
-                    <p>I am an adaptable individual transitioning from the financial industry to become a Full Stack developer with a strong attention to detail and the ability to execute successfully under pressure. I'm excited to utilise my diverse set of skills, collaborative mindset, and unwavering commitment to quality to develop important software solutions for improving user experiences and corporate growth..</p>
+                    <p>
+                         I am an adaptable individual transitioning from the
+                      financial industry to become a Full Stack developer with a
+                      strong attention to detail and the ability to execute
+                      successfully under pressure.
+                      <br />
+                      <br />
+                      I'm excited to utilise my diverse set of skills,
+                      collaborative mindset, and unwavering commitment to
+                      quality to develop important software solutions for
+                      improving user experiences and corporate growth..
+                    </p>
                     <Link to="contact" smooth={true} duration={500}>
                       <button onClick={() => console.log("connect")}>
                         Let’s Connect <ArrowRightCircle size={25} />
@@ -102,7 +117,6 @@ const about = () => {
                       isVisible ? "animate__animated animate__zoomIn" : ""
                     }
                   >
-                    <img src={""} alt="Header Img" />
                   </div>
                 )}
               </TrackVisibility>
