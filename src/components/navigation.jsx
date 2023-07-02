@@ -36,7 +36,7 @@ const Navigation = () => {
     left: 0,
     right: 0,
     justifyContent: "space-between",
-    backgroundColor: scrolled ? "#1B1811":"transparent"  ,
+    backgroundColor: scrolled ? "#1B1811" : "transparent",
     display: "flex",
     padding: "70px",
     color: "#c9c9c9",
@@ -75,46 +75,54 @@ const Navigation = () => {
   };
   return (
     <Container>
-      <nav
+      <Navbar
+        expand="lg"
         style={scrolled ? navScrolled : {}}
         className={scrolled ? "scrolled" : ""}
       >
-        <ul style={navStyle}>
-          <li style={listItemStyle}>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav style={navStyle}>
+          <Nav.Item style={listItemStyle}>
             <Link to="about" smooth={true} duration={500}>
               About
             </Link>
-          </li>
-          <li style={listItemStyle}>
+          </Nav.Item>
+          <Nav.Item style={listItemStyle}>
             <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
-          </li>
-          <li style={listItemStyle}>
+          </Nav.Item>
+          <Nav.Item style={listItemStyle}>
             <Link to="project" smooth={true} duration={500}>
               Projects
             </Link>
-          </li>
-          <li style={listItemStyle}>
+          </Nav.Item>
+          <Nav.Item style={listItemStyle}>
             <Link to="testimonial" smooth={true} duration={500}>
               Testimonial
             </Link>
-          </li>
+          </Nav.Item>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-              </a>
+              <a href="#"></a>
               <a href="#"></a>
               <a href="#"></a>
             </div>
-            <Link style={contactInfoStyle} to="contact" smooth={true} duration={500}>
+            <Link
+              style={contactInfoStyle}
+              to="contact"
+              smooth={true}
+              duration={500}
+              >
               <button className="vvd" onClick={() => console.log("connect")}>
                 <span>Let's Connect</span>
               </button>
             </Link>
           </span>
-        </ul>
-      </nav>
+        </Nav>
+                </Navbar.Collapse>
+      </Navbar>
     </Container>
   );
 };
