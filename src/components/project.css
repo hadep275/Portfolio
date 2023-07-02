@@ -1,11 +1,12 @@
 .project {
-    
+    height: 100vh;
 font-family: 'Titillium Web', sans-serif;
  color: rgb(21, 20, 20);
 background: #FFAFBD; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #b76778 , #f4c2c1); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #b76778 , #f4c2c1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 h1 {
   text-transform: uppercase;
   font-size: 4em;
@@ -18,13 +19,20 @@ h1 {
   width: 300px;
   height: 300px;
   background-color: transparent;
-  transform: rotateY(50deg);
+  transform: rotateY(60deg);
   -webkit-box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
   box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
 	transition: all 1s ease;
   color: transparent;
 }
+
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
 .card:hover {
   width: 300px;
   height: 300px;
@@ -34,13 +42,13 @@ h1 {
   color: black;
 }
 .card:hover p {
-  background-color: white;
+  background-color: transparent;
 }
 p.desc {
   z-index:999;
   position: absolute;
   top: 10px;
-  padding: 10px;
+  padding: 100px;
 }
 
 p.desc:hover {
