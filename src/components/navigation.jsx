@@ -36,7 +36,7 @@ const Navigation = () => {
     left: 0,
     right: 0,
     justifyContent: "space-between",
-    backgroundColor: scrolled ? "#1B1811" : "transparent",
+    backgroundColor: scrolled ? "transparent" : "transparent",
     display: "flex",
     padding: "70px",
     color: "#c9c9c9",

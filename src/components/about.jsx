@@ -13,8 +13,14 @@ const about = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
+  const toRotate = [
+    "HIKMAH",
+    "Web Developer",
+    "Web Designer",
+    "UI/UX Designer",
+    "Full-Stack Developer",
+  ];
+  const period = 2;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -30,8 +36,8 @@ const about = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+      ? fullText.substring(0, text.length - 4)
+      : fullText.substring(0, text.length + 4);
 
     setText(updatedText);
 
@@ -54,7 +60,7 @@ const about = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="about">
       <div className="m-24">
         <Container>
           <Row className="align-items-center">
@@ -67,17 +73,17 @@ const about = () => {
                     }
                   >
                     <span className="tagline"></span>
-                    <h1>
-                      {`Hi! I'm Hikmah`}{" "}
+                    <h1 sytle={{ marginTop:600, }}>
+                      {`I'm`}{" "}
                       <span
                         className="txt-rotate"
                         dataPeriod="1000"
-                        data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                        data-rotate='[ "HIKMAH", "Web Developer", "Web Designer", "UI/UX Designer" ]'
                       >
                         <span className="wrap">{text}</span>
                       </span>
                     </h1>
-                    <p>Full-Stack Developer.</p>
+                    {/* <p>Full-Stack Developer.</p> */}
                     <Link to="contact" smooth={true} duration={500}>
                       <button onClick={() => console.log("connect")}>
                         Let’s Connect <ArrowRightCircle size={25} />
