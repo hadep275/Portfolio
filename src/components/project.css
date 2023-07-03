@@ -1,20 +1,24 @@
 .project {
   height: 100vh;
-  padding-top: 6%;
+  padding-top: 7%;
   padding-left: 2%;
   font-family: Georgia, serif;
   color: rgb(21, 20, 20);
-  background: #ffafbd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #b76778,
-    #f4c2c1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #b76778,
-    #f4c2c1
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #df0837, #b76778, #f4c2c1, #c9c9c9);
+  background-size: 200% 400%; 
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .slick-next {
@@ -99,7 +103,7 @@ p.desc:hover {
 @media (max-width: 800px) {
   .project {
     padding-top: 25%;
-    font-size: 40px;
+    font-size: 20px;
   }
   .slick-autoplay-button {
     position: absolute;
@@ -117,7 +121,7 @@ p.desc:hover {
 @media (max-width: 500px) {
   .project {
     padding-top: 20%;
-    font-size: 20px;
+    font-size: 10px;
   }
   .slick-autoplay-button {
     position: absolute;
