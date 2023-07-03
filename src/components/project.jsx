@@ -1,16 +1,39 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./project.css"
 import ColorSharp from "../assets/img/color-sharp.png"
 import Project2 from "../assets/img/project2.png"
 import Project3 from "../assets/img/project3.png"
 const project = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    centerMode: true, // Center the active card
+    centerPadding: "60px", // Space between cards
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Display 1 card at a time on smaller screens
+          centerPadding: "40px", // Adjust spacing for smaller screens
+        },
+      },
+    ],
+
+  };
   return (
     <div class="project">
       <div class="container">
         <h1>Projects</h1>
       </div>
       <div class="container">
-        <div class="row">
+      <Slider {...settings}>
+        {/* <div class="row"> */}
           <div class="col-md-3">
             <div class="cardholder">
               <div class="card">
@@ -46,7 +69,8 @@ const project = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
+        </Slider>
       </div>
     </div>
   );
