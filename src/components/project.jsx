@@ -25,7 +25,7 @@ const project = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true, // Center the active card
@@ -46,7 +46,7 @@ const project = () => {
       },
     ],
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed (in milliseconds)
+    autoplaySpeed: 300, // Set autoplay speed (in milliseconds)
     pauseOnHover: true, // Pause autoplay on hover
   };
   return (
