@@ -53,7 +53,7 @@ const project = () => {
   return (
     <div class="project">
       <div class="container">
-        <h1>Projects</h1>
+        {/* <h1>Projects</h1> */}
       </div>
       <div class="carousel-container">
         <Slider {...settings} autoplay={autoplay} autoplaySpeed={3000}>
