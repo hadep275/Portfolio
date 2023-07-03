@@ -34,3 +34,33 @@
   text-align: center;
   font-size: 80px;
 }
+
+.fade-in-out-text {
+  transition: opacity 0.5s;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .about-title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-title {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+

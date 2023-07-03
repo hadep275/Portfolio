@@ -17,10 +17,29 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.slider {
-  height: 100vh;
+.slick-next {
+  right: 20px;
+  z-index: 1;
 }
 
+.slick-next::before {
+  display: none;
+}
+
+.slick-autoplay-button {
+  position: absolute;
+  top: 2500px;
+  right: 30px;
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+}
+.carousel-container {
+  margin-bottom: 300px; /* Adjust margin-top as needed */
+}
 h1 {
   text-transform: uppercase;
   font-size: 4em;
@@ -67,4 +86,48 @@ p.desc {
 
 p.desc:hover {
   color: #120e0e;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .project {
+    padding-top: 30%;
+    font-size: 40px;
+  }
+  .slick-autoplay-button {
+    position: absolute;
+    top: 2600px;
+    right: 30px;
+    z-index: 999;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    padding-top: 30%;
+    font-size: 20px;
+  }
+  .slick-autoplay-button {
+    position: absolute;
+    top: 2550px;
+    right: 30px;
+    z-index: 999;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+  }
 }
