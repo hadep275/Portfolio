@@ -39,10 +39,11 @@ const Navigation = () => {
     backgroundColor: scrolled ? "transparent" : "transparent",
     display: "flex",
     padding: "70px",
-    color: "#c9c9c9",
+    color: "#1b1811",
     width: "100%",
     zIndex: 9999,
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "Georgia, serif",
+    fontWeight: "bold"
   };
 
   const columnStyle = {

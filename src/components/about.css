@@ -1,7 +1,16 @@
 .banner {
   padding-top: 20%;
   padding-left: 2%;
-  background: radial-gradient(circle, #f4c2c1, #b76778, #1b1811, #830987);
+  font-family: Georgia, serif;
+  background: radial-gradient(
+    circle,
+    #c9c9c9,
+    #b76778,
+    #c0c0c0,
+    /* #830987, */
+    #f4c2c1
+    /* #1b1811 */
+  );
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -24,17 +33,4 @@
   font-weight: 800;
   text-align: center;
   font-size: 80px;
-}
-
-.fade-in-out-text {
-  transition: opacity 0.1s ease-in-out;
-  opacity: 0;
-}
-
-.fade-in-out-text.visible {
-  opacity: 1;
-}
-
-.fade-in-out-text.hidden {
-  display: none;
 }
