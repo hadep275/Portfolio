@@ -14,12 +14,16 @@ const project = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true, // Center the active card
-    centerPadding: "60px", // Space between cards
+    centerPadding: "10px", // Space between cards
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1, // Display 1 card at a time on smaller screens
+          slidesToScroll: 1, // Display 1 card at a time on smaller screens
+          infinite: true, 
+          dots: true, 
+          centerMode: true, // Center the active card
           centerPadding: "40px", // Adjust spacing for smaller screens
         },
       },
