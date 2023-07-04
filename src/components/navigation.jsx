@@ -100,8 +100,8 @@ const Navigation = () => {
             </Link>
           </Nav.Item>
           <Nav.Item style={listItemStyle}>
-            <Link to="testimonial" smooth={true} duration={500}>
-              Testimonial
+            <Link to="education" smooth={true} duration={500}>
+              Education
             </Link>
           </Nav.Item>
           <span className="navbar-text">

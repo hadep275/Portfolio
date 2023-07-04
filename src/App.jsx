@@ -9,42 +9,29 @@ import Skills from "./components/skills";
 import Footer from "./footer.jsx";
 import Contact from "./components/contact";
 import "./App.css";
-import colorSharp from "./assets/img/color-sharp.png"
-import Testimonial from "./components/testimonial";
+import colorSharp from "./assets/img/color-sharp.png";
+import Education from "./components/Education";
 function App() {
   return (
     <>
       <Navigation />
-      <main>
-        <div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <About />
-        </div>
-        <Skills />
-        <Project />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Testimonial />
-        <Contact />
-      </main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <About />
+      <Skills />
+      <Project />
+      <Education />
+      <Contact />
       <Footer />
     </>
   );

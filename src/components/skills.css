@@ -1,6 +1,6 @@
 .skills {
   height: 100vh;
-  padding-top: 12%;
+  padding-top: 3%;
   padding-left: 5%;
   padding-right: 5%;
   font-family: Georgia, serif;
@@ -13,8 +13,7 @@
   height: 65vh;
   width: 30%;
   margin-right: 5%;
-  /* background-color:#b76778 ; */
-  background: linear-gradient(-45deg, #ffafbd, #ef6281);
+  background: linear-gradient(-45deg, #ffafbd, #f0486c);
   padding: 20px;
   border-radius: 100px;
   box-shadow: 1px 5px 7px rgba(1, 2, 3, 4);
@@ -30,11 +29,14 @@ h2 {
   
 }
 
-/* ul {
-  list-style-type: none;
-  padding: 10%;
+.header{
+margin-top: 10%;
+margin-left: 35%;
+margin-bottom: 10%;
 }
 
-li {
-  margin-bottom: 5px;
-} */
+.list {
+  margin-top: 7%;
+  margin-left: 40%;
+  list-style-type: none;
+} 

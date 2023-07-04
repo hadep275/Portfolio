@@ -4,30 +4,30 @@ const skills = () => {
   return (
     <div class="skills">
      <div className="skill-group">
-        <h2>Front End</h2>
+        <h2 class="header">Front End</h2>
         <ul>
-          <li>React.js</li>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
+          <li class="list">React.js</li>
+          <li class="list">HTML/CSS</li>
+          <li class="list"> JavaScript</li>
         </ul>
       </div>
       <div className="skill-group">
-        <h2>Tools</h2>
+        <h2 class="header">Tools</h2>
         <ul>
-          <li>Git</li>
-          <li>Azure</li>
-          <li>Figma</li>
-          <li>Cognos</li>
-          <li>Agile Methodologies</li>
-          <li>Google Cloud Services</li>
+          <li class="list">Git</li>
+          <li class="list">Azure</li>
+          <li class="list">Figma</li>
+          <li class="list">Cognos</li>
+          <li class="list">Agile Methodologies</li>
+          <li class="list">Google Cloud Services</li>
         </ul>
       </div>
       <div className="skill-group">
-        <h2>Back End</h2>
+        <h2 class="header">Back End</h2>
         <ul>
-          <li>Node.js</li>
-          <li>MongoDB</li>
-          <li>Express.js</li>
+          <li class="list">Node.js</li>
+          <li class="list">MongoDB</li>
+          <li class="list">Express.js</li>
         </ul>
       </div>
     </div>
