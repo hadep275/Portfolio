@@ -1,42 +1,46 @@
 .skills {
-  height: 100vh;
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-block: 130px;
+  padding-inline: 30px;
   font-family: Georgia, serif;
   color: rgb(21, 20, 20);
   background: #ffafbd; /* fallback for old browsers */
+  outline: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .skill-group {
   display: inline-block;
   height: 65vh;
   width: 30%;
-  margin-right: 5%;
+  min-width: 400px;
+
   background: linear-gradient(-45deg, #ffafbd, #f0486c);
   padding: 20px;
   border-radius: 100px;
   box-shadow: 1px 5px 7px rgba(1, 2, 3, 4);
 }
 
-.skill-group:last-child {
+/* .skill-group:last-child {
   margin-right: 0;
-}
+} */
 
 h2 {
   font-size: 40px;
-
-  
 }
 
-.header{
-margin-top: 10%;
-margin-left: 35%;
-margin-bottom: 10%;
+.header {
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-bottom: 10%;
 }
 
 .list {
   margin-top: 7%;
   margin-left: 40%;
   list-style-type: none;
-} 
+}
