@@ -4,7 +4,9 @@ import "./education.css"
 const Education = () => {
   return (
     <div class="education">
-      <h3>Education</h3>
+      <div class="education-group"></div>
+      <div class="education-group"></div>
+      <div class="education-group"></div>
     </div>
   );
 };

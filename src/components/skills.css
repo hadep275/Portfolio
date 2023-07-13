@@ -1,23 +1,23 @@
 .skills {
   padding-block: 130px;
   padding-inline: 30px;
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   font-family: Georgia, serif;
+  min-height: 100vh;
   color: rgb(21, 20, 20);
   background: #ffafbd; /* fallback for old browsers */
   outline: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .skill-group {
   display: inline-block;
   height: 65vh;
   width: 30%;
-  min-width: 400px;
+  min-width: 355px;
 
   background: linear-gradient(-45deg, #ffafbd, #f0486c);
   padding: 20px;

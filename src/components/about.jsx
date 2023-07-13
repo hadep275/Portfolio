@@ -54,7 +54,7 @@ const FadeInOutText = ({ text, currentIndex, index }) => {
   return (
     <div className={`fade-in-out-text ${visible ? "visible" : "hidden"}`}>
       {text}
-      <p>BIO HERE bla, bla, bla</p>
+      <p class="about-p">Adaptable finance professional transitioning to Full Stack developer. Detail-oriented and thrive under pressure. Utilizing diverse skills, collaborative mindset, and commitment to quality for user-centric software solutions and corporate growth.</p>
     </div>
   );
 };
