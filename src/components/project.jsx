@@ -40,7 +40,6 @@ const project = () => {
           slidesToScroll: 1, // Display 1 card at a time on smaller screens
           infinite: true,
           dots: true,
-          slidesToShow: 1, 
           centerMode: true, // Center the active card
           centerPadding: "40px", // Adjust spacing for smaller screens
         },

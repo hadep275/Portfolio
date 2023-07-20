@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "animate.css";
-import "./About.css";
+import "./about.css";
 
 const about = () => {
   const textArr = [
