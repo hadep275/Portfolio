@@ -58,7 +58,7 @@ h1 {
   font-size: 4em;
 }
 .cardholder {
-  margin-top: 150px;
+  margin-block: 70px;
   perspective: 600px;
 }
 .card {

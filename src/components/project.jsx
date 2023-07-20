@@ -14,13 +14,13 @@ const project = () => {
   };
   const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
+    // return (
+    //   <div
+    //     className={className}
+    //     style={{ ...style, display: "block", background: "red" }}
+    //     onClick={onClick}
+    //   />
+    // );
   };
 
   const settings = {
@@ -93,14 +93,14 @@ const project = () => {
             </div>
           </div>
         </Slider>
-        <div>
+        {/* <div>
           <button
             className="slick-autoplay-button"
             onClick={handleAutoplayToggle}
           >
             {autoplay ? "Pause" : "Play"}
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

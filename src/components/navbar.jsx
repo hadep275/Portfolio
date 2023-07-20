@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { Navbar, Container, Nav, Collapse, Dropdown} from 'react-bootstrap'
-import logo from '../assets/img/logo.svg';
 
 import { HashLink } from 'react-router-hash-link';
 import { AiOutlineGithub } from "react-icons/ai";
