@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Navbar, Container, Nav, Collapse, Dropdown } from "react-bootstrap";
-import { HashLink } from "react-router-hash-link";
-import { AiOutlineGithub } from "react-icons/ai";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -21,9 +19,7 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+  
   const navScrolled = {
     position: "relative",
     width: "100%",
