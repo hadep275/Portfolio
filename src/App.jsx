@@ -1,34 +1,31 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./components/about";
-import Project from "./components/project";
-import Navigation from "./components/navigation";
-import Skills from "./components/skills";
-import Contact from "./components/contact";
-import "./App.css";
-import Education from "./components/education";
+import React from 'react';
+import './App.css';
+import Header from '../src/components/Header';
+import About from '../Src/components/About';
+import Projects from '../Src/components/Projects';
+import Contact from '../Src/components/Contact';
+import Navigation from './components/Navigation';
+import Skills from '../Src/components/Skills';
+import Blog from '../Src/components/Blog';
+import Footer from './components/Footer';
+
+
 function App() {
+
+
   return (
-    <>
-      <Navigation />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <About />
-      <Skills />
-      <Project />
-      <Education />
-      <Contact />
-    </>
+    <div className="app">
+      <Navigation/> 
+      {/* <Header /> */}
+      <main>
+        <About />
+        <Skills/>
+        <Projects />
+        <Contact />
+        {/* <Blog/> */}
+      </main>
+      <Footer/>
+    </div>
   );
 }
 

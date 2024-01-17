@@ -1,0 +1,44 @@
+.project {
+    padding: 60px 0;
+    text-align: center;
+    height: fit-content;
+  }
+  
+  .project h2 {
+    margin-bottom: 40px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .project-item {
+    width: 300px;
+    margin: 12px;
+    /* background-color: #b31e50; */
+    padding: 15px;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+  }
+
+  a{
+    padding: 8px;
+  }
